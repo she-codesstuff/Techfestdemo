@@ -1,0 +1,230 @@
+<html>
+
+<head>
+    <title>NCET TECNOFEST</title>
+    <style>
+        div {
+            text-align: center;
+        }
+
+        h2 {
+            color: royalblue;
+            background-color: black;
+        }
+
+        .heading {
+            color: royalblue;
+            background-color: white;
+        }
+
+        body {
+            background-color: white;
+            color: black;
+            font-family: Arial, sans-serif;
+        }
+
+        .technofest {
+            color: royalblue;
+            background-image: url('imagetokyo.jpg');
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+            height: 200px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            color: black;
+            background-color: antiquewhite;
+        }
+
+        th {
+            border: 2px solid;
+            color: white;
+            background-color: blue;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        table tr:hover {
+            background-color: #f0f8ff;
+        }
+
+        .guest {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .guest img {
+            width: 200px;
+            display: block;
+            margin: 10px auto;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 15px auto;
+        }
+
+        .register {
+            text-align: center;
+            margin: 50px;
+            background-color: antiquewhite;
+            color: #000000;
+        }
+
+        .Gallery {
+            text-align: center;
+        }
+
+        .Gallery img {
+            margin: 10px;
+            border-radius: 8px;
+        }
+
+        .contact {
+            background-color: #000000;
+            color: whitesmoke;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading" style="background-color: #000000;">Technofest 2025</h1>
+
+    <ul class="heading">
+        <li><a href="#About">About</a></li>
+        <li><a href="#Schedule">Schedule</a></li>
+        <li><a href="#guest">Guest</a></li>
+        <li><a href="#register">Register</a></li>
+        <li><a href="#Gallery">Gallery</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+    </ul>
+
+    <div class="technofest">
+        <h2>Welcome To Technofest 2025</h2>
+    </div>
+
+    <div id="About">
+        <h2>About</h2>
+        <p>
+            Nagarjuna College (Nagarjuna College of Engineering & Technology - NCET) is a
+            self-financing, autonomous engineering college established in 2001 under the
+            Nagarjuna Education Society by Sri J.V. Ranga Raju. Located near Devanahalli, Bangalore,
+            it is affiliated with VTU and approved by AICTE, offering B.E., M.Tech., and MBA programs.
+            NCET is known for its industry-integrated curriculum, experienced faculty, on-campus
+            residential facilities, and A+ NAAC accreditation with NIRF Innovation Ranking.
+        </p>
+    </div>
+
+    <div id="Schedule">
+        <h2>Schedule</h2>
+        <table>
+            <tr>
+                <th>DAY</th>
+                <th>EVENT</th>
+                <th>TIMINGS</th>
+            </tr>
+            <tr>
+                <td>Day 1</td>
+                <td>Coding Contest</td>
+                <td>9:00 - 12:00</td>
+            </tr>
+            <tr>
+                <td>Day 1</td>
+                <td>Dance Battle</td>
+                <td>12:00 - 3:00</td>
+            </tr>
+            <tr>
+                <td>Day 1</td>
+                <td>Singing</td>
+                <td>3:00 - 7:00</td>
+            </tr>
+            <tr>
+                <td>Day 2</td>
+                <td>Hackathon</td>
+                <td>9:00 - 12:00</td>
+            </tr>
+            <tr>
+                <td>Day 2</td>
+                <td>Battle of Bands</td>
+                <td>12:00 - 3:00</td>
+            </tr>
+            <tr>
+                <td>Day 2</td>
+                <td>DJ Night</td>
+                <td>3:00 - 7:00</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="guest" class="guest">
+        <h2>Special Guest</h2>
+        <h3>Sanjith Hegde</h3>
+        <img src="guestphoto.jpg" alt="Guest Photo">
+        <p>
+            Sanjith Hegde is an Indian playback singer.
+            He has sung songs in Kannada, Tamil, Telugu, Malayalam, and Hindi.
+        </p>
+    </div>
+
+    <div id="register" class="register">
+        <h2>Register Now:</h2>
+        <form method="post">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required><br><br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required><br><br>
+
+            <label>Select Events:</label><br><br>
+            <input type="checkbox" id="check" name="box3">Coding contest <br>
+            <input type="checkbox" id="check" name="box4">Full Stack Development <br>
+            <input type="checkbox" id="check" name="box5">ServiceNow workshop <br>
+            <hr>
+
+            <label>Preferred Track:</label><br><br>
+            <input type="radio" name="track" value="HTML"> HTML <br>
+            <input type="radio" name="track" value="CSS"> CSS <br>
+            <input type="radio" name="track" value="JavaScript"> JavaScript <br>
+            <br><br>
+
+            <input type="submit" value="Register Now">
+        </form>
+    </div>
+
+    <div id="Gallery" class="Gallery">
+        <h2>Gallery:</h2>
+        <img src="singing.jpg" height="200px" alt="dancing">
+        <img src="Dancing.jpeg" height="200px">
+        <img src="dj.jpg" height="200px" width="300px">
+    </div>
+
+    <div id="contact" class="contact">
+        <h2>Contact us:</h2>
+        <p><strong>Email:</strong> geethaaa373@gmail.com</p>
+        <p><strong>Phone:</strong> 7676062753</p>
+        <p>
+            <strong>
+                <address>
+                    address: Nagarjuna College of Engineering and Technology
+                    Mudugurki(V), Venkatagiri Kote(P), Devanahalli(TQ), Bengaluru-562164
+                </address>
+            </strong>
+            <br>
+            <a href="https://ncet.co.in/contact-us" target="_blank">contact-us details</a>
+        </p>
+    </div>
+
+    <footer>
+        <p>© 2025 NCET Technofest</p>
+    </footer>
+</body>
+
+</html>
